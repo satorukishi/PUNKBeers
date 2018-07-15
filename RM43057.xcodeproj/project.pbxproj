@@ -8,20 +8,103 @@
 
 /* Begin PBXBuildFile section */
 		09173D7D20F41CC400C3004D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09173D7C20F41CC400C3004D /* AppDelegate.swift */; };
-		09173D7F20F41CC400C3004D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09173D7E20F41CC400C3004D /* ViewController.swift */; };
 		09173D8220F41CC400C3004D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09173D8020F41CC400C3004D /* Main.storyboard */; };
 		09173D8420F41CC400C3004D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09173D8320F41CC400C3004D /* Assets.xcassets */; };
 		09173D8720F41CC400C3004D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09173D8520F41CC400C3004D /* LaunchScreen.storyboard */; };
+		09173D8F20F422C700C3004D /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09173D8E20F422C700C3004D /* Beer.swift */; };
+		09173D9120F434DB00C3004D /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09173D9020F434DA00C3004D /* REST.swift */; };
+		09173D9320F4469200C3004D /* BeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09173D9220F4469200C3004D /* BeersTableViewController.swift */; };
+		09173D9520F455FE00C3004D /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09173D9420F455FE00C3004D /* BeerViewController.swift */; };
+		094D3E7F20FBE00D00171329 /* Kingfisher.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = 094D3E6920FBD1A000171329 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09BD016820F7021C00BF5D51 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD016720F7021C00BF5D51 /* BeerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		094D3E6820FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		094D3E6A20FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49D61BEDA67C00CE335D;
+			remoteInfo = "Kingfisher-tvOS";
+		};
+		094D3E6C20FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B2944481C3D01B20088C3E7;
+			remoteInfo = "Kingfisher-macOS";
+		};
+		094D3E6E20FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D16799EB1C4E74460020FD12;
+			remoteInfo = "Kingfisher-watchOS";
+		};
+		094D3E7020FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
+			remoteInfo = KingfisherTests;
+		};
+		094D3E7220FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B37667F1C478F940001443F;
+			remoteInfo = "KingfisherTests-tvOS";
+		};
+		094D3E7420FBD1A000171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D10EC2311C3D632300A4211C;
+			remoteInfo = "KingfisherTests-macOS";
+		};
+		094D3E7A20FBDEF800171329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		094D3E7E20FBDFE000171329 /* Copy Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				094D3E7F20FBE00D00171329 /* Kingfisher.framework in Copy Framework */,
+			);
+			name = "Copy Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		09173D7920F41CC400C3004D /* PUNKBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUNKBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09173D7920F41CC400C3004D /* RM43057.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RM43057.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09173D7C20F41CC400C3004D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09173D7E20F41CC400C3004D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09173D8120F41CC400C3004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09173D8320F41CC400C3004D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09173D8620F41CC400C3004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09173D8820F41CC400C3004D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09173D8E20F422C700C3004D /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		09173D9020F434DA00C3004D /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
+		09173D9220F4469200C3004D /* BeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersTableViewController.swift; sourceTree = "<group>"; };
+		09173D9420F455FE00C3004D /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		09BD016720F7021C00BF5D51 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +123,14 @@
 			children = (
 				09173D7B20F41CC400C3004D /* PUNKBeers */,
 				09173D7A20F41CC400C3004D /* Products */,
+				094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
 		09173D7A20F41CC400C3004D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09173D7920F41CC400C3004D /* PUNKBeers.app */,
+				09173D7920F41CC400C3004D /* RM43057.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,33 +139,53 @@
 			isa = PBXGroup;
 			children = (
 				09173D7C20F41CC400C3004D /* AppDelegate.swift */,
-				09173D7E20F41CC400C3004D /* ViewController.swift */,
 				09173D8020F41CC400C3004D /* Main.storyboard */,
 				09173D8320F41CC400C3004D /* Assets.xcassets */,
 				09173D8520F41CC400C3004D /* LaunchScreen.storyboard */,
 				09173D8820F41CC400C3004D /* Info.plist */,
+				09173D8E20F422C700C3004D /* Beer.swift */,
+				09173D9020F434DA00C3004D /* REST.swift */,
+				09173D9220F4469200C3004D /* BeersTableViewController.swift */,
+				09173D9420F455FE00C3004D /* BeerViewController.swift */,
+				09BD016720F7021C00BF5D51 /* BeerTableViewCell.swift */,
 			);
 			path = PUNKBeers;
+			sourceTree = "<group>";
+		};
+		094D3E5F20FBD19F00171329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				094D3E6920FBD1A000171329 /* Kingfisher.framework */,
+				094D3E6B20FBD1A000171329 /* Kingfisher.framework */,
+				094D3E6D20FBD1A000171329 /* Kingfisher.framework */,
+				094D3E6F20FBD1A000171329 /* Kingfisher.framework */,
+				094D3E7120FBD1A000171329 /* KingfisherTests.xctest */,
+				094D3E7320FBD1A000171329 /* KingfisherTests-tvOS.xctest */,
+				094D3E7520FBD1A000171329 /* KingfisherTests-macOS.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09173D7820F41CC400C3004D /* PUNKBeers */ = {
+		09173D7820F41CC400C3004D /* RM43057 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09173D8B20F41CC400C3004D /* Build configuration list for PBXNativeTarget "PUNKBeers" */;
+			buildConfigurationList = 09173D8B20F41CC400C3004D /* Build configuration list for PBXNativeTarget "RM43057" */;
 			buildPhases = (
 				09173D7520F41CC400C3004D /* Sources */,
 				09173D7620F41CC400C3004D /* Frameworks */,
 				09173D7720F41CC400C3004D /* Resources */,
+				094D3E7E20FBDFE000171329 /* Copy Framework */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				094D3E7B20FBDEF800171329 /* PBXTargetDependency */,
 			);
-			name = PUNKBeers;
+			name = RM43057;
 			productName = PUNKBeers;
-			productReference = 09173D7920F41CC400C3004D /* PUNKBeers.app */;
+			productReference = 09173D7920F41CC400C3004D /* RM43057.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 09173D7420F41CC400C3004D /* Build configuration list for PBXProject "PUNKBeers" */;
+			buildConfigurationList = 09173D7420F41CC400C3004D /* Build configuration list for PBXProject "RM43057" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,12 +215,70 @@
 			mainGroup = 09173D7020F41CC400C3004D;
 			productRefGroup = 09173D7A20F41CC400C3004D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 094D3E5F20FBD19F00171329 /* Products */;
+					ProjectRef = 094D3E5E20FBD19F00171329 /* Kingfisher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				09173D7820F41CC400C3004D /* PUNKBeers */,
+				09173D7820F41CC400C3004D /* RM43057 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		094D3E6920FBD1A000171329 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 094D3E6820FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		094D3E6B20FBD1A000171329 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 094D3E6A20FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		094D3E6D20FBD1A000171329 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 094D3E6C20FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		094D3E6F20FBD1A000171329 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 094D3E6E20FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		094D3E7120FBD1A000171329 /* KingfisherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KingfisherTests.xctest;
+			remoteRef = 094D3E7020FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		094D3E7320FBD1A000171329 /* KingfisherTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-tvOS.xctest";
+			remoteRef = 094D3E7220FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		094D3E7520FBD1A000171329 /* KingfisherTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-macOS.xctest";
+			remoteRef = 094D3E7420FBD1A000171329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09173D7720F41CC400C3004D /* Resources */ = {
@@ -136,12 +298,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09173D7F20F41CC400C3004D /* ViewController.swift in Sources */,
+				09173D9520F455FE00C3004D /* BeerViewController.swift in Sources */,
+				09BD016820F7021C00BF5D51 /* BeerTableViewCell.swift in Sources */,
+				09173D8F20F422C700C3004D /* Beer.swift in Sources */,
+				09173D9320F4469200C3004D /* BeersTableViewController.swift in Sources */,
 				09173D7D20F41CC400C3004D /* AppDelegate.swift in Sources */,
+				09173D9120F434DB00C3004D /* REST.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		094D3E7B20FBDEF800171329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-iOS";
+			targetProxy = 094D3E7A20FBDEF800171329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		09173D8020F41CC400C3004D /* Main.storyboard */ = {
@@ -301,7 +475,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09173D7420F41CC400C3004D /* Build configuration list for PBXProject "PUNKBeers" */ = {
+		09173D7420F41CC400C3004D /* Build configuration list for PBXProject "RM43057" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09173D8920F41CC400C3004D /* Debug */,
@@ -310,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09173D8B20F41CC400C3004D /* Build configuration list for PBXNativeTarget "PUNKBeers" */ = {
+		09173D8B20F41CC400C3004D /* Build configuration list for PBXNativeTarget "RM43057" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09173D8C20F41CC400C3004D /* Debug */,
