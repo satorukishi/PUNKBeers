@@ -61,7 +61,8 @@ class BeersTableViewController: UITableViewController {
         let beer = beers[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BeerTableViewCell
         cell.lbNome.text = beer.name
-        cell.lbTeorAlcoolico.text = "Teor Alcoólico: " + String(beer.abv)
+        let teor = beer.abv == nil ? "": String(describing: beer.abv!)
+        cell.lbTeorAlcoolico.text = "Teor Alcoólico: " + teor
         
         let url = URL(string: beer.image_url)!
         cell.ivBeer.kf.setImage(with: url)

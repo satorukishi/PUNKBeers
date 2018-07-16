@@ -8,28 +8,28 @@
 
 import Foundation
 
-class Beer: Codable {
-    var id: Int?
+struct Beer: Codable {
+    var id: Int
     var name: String = ""
     var tagline: String = ""
-    var first_brewed: String = ""
+//    var first_brewed: String = ""
     var description: String = ""
     var image_url: String = ""
-    var abv: Float = 0.0
-    var ibu: Float = 0.0
-    var target_fg: Float = 0
-    var target_og: Float = 0
-    var ebc: Float? = 0
-    var srm: Float? = 0
-    var ph: Float = 0.0
-    var attenuation_level: Float = 0
-    var volume: Volume
-    var boil_volume: Volume
-    var method: Method
-    var ingredients: Ingredients
-    var food_pairing: [String]
-    var brewers_tips: String
-    var contributed_by: String
+    var abv: Float? = 0.0
+    var ibu: Float? = 0.0
+//    var target_fg: Float = 0
+//    var target_og: Float = 0
+//    var ebc: Float? = 0
+//    var srm: Float? = 0
+//    var ph: Float = 0.0
+//    var attenuation_level: Float = 0
+//    var volume: Volume
+//    var boil_volume: Volume
+//    var method: Method
+//    var ingredients: Ingredients
+//    var food_pairing: [String]
+//    var brewers_tips: String
+//    var contributed_by: String
 }
 
 struct Volume: Codable {

@@ -26,7 +26,7 @@ enum RESTOperation {
 
 class REST {
     
-    private static let basePath = "https://api.punkapi.com/v2/beers?per_page=2"
+    private static let basePath = "https://api.punkapi.com/v2/beers"
     private static let configuration: URLSessionConfiguration = {
         let config = URLSessionConfiguration.default
         config.allowsCellularAccess = true

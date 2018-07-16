@@ -10,9 +10,12 @@ import UIKit
 class BeerViewController: UIViewController {
     
     // MARK: - IBOutlets
-//    @IBOutlet weak var lbBrand: UILabel!
-//    @IBOutlet weak var lbGasType: UILabel!
-//    @IBOutlet weak var lbPrice: UILabel!
+    @IBOutlet weak var lbNome: UILabel!
+    @IBOutlet weak var lbTagline: UILabel!
+    @IBOutlet weak var lbDescricao: UILabel!
+    @IBOutlet weak var lbTeorAlcoolico: UILabel!
+    @IBOutlet weak var lbEscalaAmargor: UILabel!
+    @IBOutlet weak var ivCerveja: UIImageView!
     
     var beer: Beer!
     
@@ -20,15 +23,17 @@ class BeerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lbNome.text = beer.name
+        lbTagline.text = beer.tagline
+        lbDescricao.text = beer.description
         
-//        lbBrand.text = beer.brand
-//        lbGasType.text = beer.gas
-//        lbPrice.text = "\(beer.price)"
+        let teor = beer.abv == nil ? "0.0" : String(describing: beer.abv!)
+        let escalaAmargor = beer.ibu == nil ? "0.0" : String(describing: beer.ibu!)
+        lbTeorAlcoolico.text = teor
+        lbEscalaAmargor.text = escalaAmargor
+        
+        let url = URL(string: beer.image_url)!
+        ivCerveja.kf.setImage(with: url)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! AddEditViewController
-//        vc.beer = beer
-//    }
     
 }
